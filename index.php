@@ -1,5 +1,11 @@
 <?php
- 
+
+require_once __DIR__ . '/class/prodotti.php';
+require_once __DIR__ . '/class/cibi.php';
+require_once __DIR__ . '/class/cucce.php';
+require_once __DIR__ . '/class/giochi.php';
+require_once __DIR__ . '/class/clienti.php';
+require_once __DIR__ . '/class/registrati.php';
 
 
 ?>
