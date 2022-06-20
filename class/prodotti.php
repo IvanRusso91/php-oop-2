@@ -6,14 +6,14 @@ class Prodotti{
   public $name;
   public $caratteristica;
   public $prezzo;
-  public $destinatario;
+  public $animale;
   
-  public function __construct($_name, $_caratteristica, $_prezzo, $_destinazione){
+  public function __construct($_name, $_caratteristica, $_prezzo, $_animale){
     
     $this->name = $_name;
     $this->caratteristica = $_caratteristica;
     $this->prezzo = $_prezzo;
-    $this->destinazione = $_destinazione;
+    $this->animale = $_animale;
 
   }
 

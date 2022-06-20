@@ -2,15 +2,16 @@
 
 require_once __DIR__ . "/clienti.php";
 
-class Registrati extends clienti{
+class Registrati extends Clienti{
 
   public $sconto = 0.20;
   private $email;
-  private $iscritto;
+  
 
-  public function __construct($_name, $_surname, $_email, $_iscritto){
+  public function __construct($_name, $_surname, $_email, $_iscritto, $_n_card, $_scadenza){
 
-    parent::__construct($_name, $_surname);
+    parent::__construct($_name, $_surname, $_iscritto, $_n_card, $_scadenza);
+
     $this->setEmail($_email);
     $this->setIscritto($_iscritto);
     
@@ -19,9 +20,7 @@ class Registrati extends clienti{
 
   // Setting..
 
-  public function setIscritto($_iscritto){
-    $this->inscritto = $_iscritto;
-  }
+  
 
   public function setEmail($_email){
     $this->email = $_email;
@@ -29,9 +28,6 @@ class Registrati extends clienti{
 
   // getting..
 
-  public function getIscritto(){
-    return $this->iscritto;
-  }
 
   public function getEmail(){
     return $this->email;

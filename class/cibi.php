@@ -8,9 +8,9 @@ class Cibi extends Prodotti{
   public $peso;
 
 
-  public function __construct($_name, $_caratteristica, $_peso, $_destinazione, $_prezzo){
+  public function __construct($_name, $_caratteristica, $_peso, $_animale, $_prezzo){
 
-    parent::__construct($_name,$_caratteristica, $_prezzo, $_destinazione);
+    parent::__construct($_name,$_caratteristica, $_prezzo, $_animale);
     $this->peso = $_peso;
     
   }

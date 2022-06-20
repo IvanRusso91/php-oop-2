@@ -10,12 +10,12 @@ class Cucce extends Prodotti{
 
   public function __construct($_name, 
                               $_caratteristica, 
-                              $_destinazione, 
+                              $_animale, 
                               $_prezzo,
                               $_dimensioni,
                               $_locazione){
 
-    parent::__construct($_name,$_caratteristica, $_prezzo, $_destinazione);
+    parent::__construct($_name,$_caratteristica, $_prezzo, $_animale);
     $this->dimensioni = $_dimensioni;
     $this->locazione = $_locazione;
       
