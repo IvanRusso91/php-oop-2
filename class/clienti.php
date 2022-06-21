@@ -2,47 +2,43 @@
 
 class Clienti {
   
-  public $name;
-  public $surname;
-  private $n_card;
-  private $scadenza;
-  private $iscritto;
+  private $name;
+  private $surname;
+  private $iscritto= true;
 
 
-  public function __construct($_name, $_surname, $_iscritto, $_n_card, $_scadenza ){
+  public function __construct($_name, $_surname, $_iscritto){
     
     $this->name = $_name;
     $this->surname = $_surname;  
     $this->iscritto = $_iscritto;
-    $this->setCard($_n_card);
-    $this->setScadenza($_scadenza);
+  }
+
+  public function setName($_name){
+    $this->name = $_name;
+
+  }
+  
+  public function setSurname($_surname){
+    $this->surname = $_surname;
   }
 
   public function setIscritto($_iscritto){
-    $this->inscritto = $_iscritto;
-  }
-
-  public function setCard($_n_card){
-    $this->n_card = $_n_card;
-  }
-
-  public function setScadenza($_scadenza){
-    $this->scadenza = $_scadenza;
+  $this->iscritto = $_iscritto;
   }
 
   // getting..
 
-  
+  public function getName(){
+    return $this->name;
+  } 
+
+  public function getSurname(){
+    return $this->surname;
+  }
+
   public function getIscritto(){
-    return $this->iscritto;
-  }
-
-  public function getCard(){
-    return $this->n_card;
-  }
-
-  public function getScadenza(){
-    return $this->scadenza;
+    return $this->Iscritto;
   }
 
 }
